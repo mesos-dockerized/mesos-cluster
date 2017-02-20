@@ -1,0 +1,11 @@
+language: go
+sudo: reuired
+install: true
+
+go:
+  - 1.7.5
+
+script:
+  - go get -u github.com/vbatts/git-validation
+  - git-validation -q -run DCO,short-subject -range 2cf3c49efbb4a3cfad4fd76179106b32ba729715..HEAD
+
