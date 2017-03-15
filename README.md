@@ -1,4 +1,6 @@
 ## Mesos dockerized
+[![Build Status](https://travis-ci.org/mesos-dockerized/mesos-cluster.svg?branch=master)](https://travis-ci.org/mesos-dockerized/mesos-cluster)
+
 Running mesos cluster in docker containers.
 
 Tested on host OS: Ubuntu 16.04
