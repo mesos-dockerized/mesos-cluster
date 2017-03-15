@@ -84,7 +84,7 @@ ExecStart=/usr/bin/docker run \
         -v /cgroup:/cgroup \
         -v /sys:/sys \
         -v /usr/local/bin/docker:/usr/local/bin/docker \
-        quay.io/mesosdockerized/mesos-master:v1.1.0
+        quay.io/mesosdockerized/mesos-slave:v1.1.0
 ExecStop=/usr/bin/docker stop -t 2 mesos-slave
 ExecStopPost=/usr/bin/docker rm -f mesos-slave
 Restart=always
